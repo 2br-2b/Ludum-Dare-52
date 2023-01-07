@@ -7,13 +7,15 @@ public class PlayerHolding : MonoBehaviour
 {
 
     public CropType holding = CropType.NoCrop;
-    public bool holdingSeeds = true;
-
+    public bool holdingSeeds = false;
+    public int money = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         holding = CropType.CandyCane;
+        holdingSeeds = true;
+        money = 100;
     }
 
     // Update is called once per frame
@@ -21,11 +23,11 @@ public class PlayerHolding : MonoBehaviour
     {
         
         
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            print("Hi");
             if (holding == CropType.NoCrop)
             {
+                // The player is holding nothing
                 GameObject nearest = GetNearestTileInRange();
 
                 if (nearest != null)
@@ -35,7 +37,31 @@ public class PlayerHolding : MonoBehaviour
                     if (plantState.currentPlantedState == TileCropState.HarvestReady)
                     {
                         holding = plantState.Harvest();
+                        holdingSeeds = false;
                         print("I am now holding " + holding.ToString());
+                    }
+                }
+                else
+                {
+                    // The player is holding nothing and is not near any plants
+                    nearest = GetNearestStoreInRange();
+                    if (nearest != null)
+                    {
+                        // The player is holding nothing and is near a store
+                        Store store = nearest.GetComponent<Store>();
+                        
+                        if(store.price > money)
+                        {
+                            // TODO: not enough money
+                        }
+                        else
+                        {
+                            money -= store.price;
+                            holdingSeeds = true;
+                            holding = store.cropSelling;
+
+                        }
+                        
                     }
                 }
 
@@ -62,6 +88,7 @@ public class PlayerHolding : MonoBehaviour
                             // We can plant seeds
                             plantState.PlantSeeds((int)holding);
                             holding = CropType.NoCrop;
+                            holdingSeeds = false;
                             return;
                         }
                     }
@@ -70,7 +97,17 @@ public class PlayerHolding : MonoBehaviour
             }
             else
             {
+                print("e");
                 // The player is holding some grown plant
+
+                GameObject dropoff = GetNearestDropoffInRange();
+                if (dropoff != null)
+                {
+                    // The player is holding some grown plant and is near a dropoff
+                    DropoffPlaceScript dropoffScript = dropoff.GetComponent<DropoffPlaceScript>();
+                    dropoffScript.Deposit(holding);
+                    holding = CropType.NoCrop;
+                }
             }
         }
     }
@@ -88,6 +125,50 @@ public class PlayerHolding : MonoBehaviour
         foreach (Collider2D collider in hitColliders)
         {
             if (collider.gameObject.tag == "Ground")
+            {
+                return collider.gameObject;
+            }
+        }
+
+        return null;
+
+    }
+
+    private GameObject GetNearestStoreInRange()
+    {
+        // Find the single nearest TRIGGER on the "Ground" layer in a circle
+        // This is all 2d
+
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.5f, LayerMask.GetMask("Store"));
+
+        // Order the colliders by distance
+        System.Array.Sort(hitColliders, (x, y) => Vector2.Distance(transform.position, x.transform.position).CompareTo(Vector2.Distance(transform.position, y.transform.position)));
+
+        foreach (Collider2D collider in hitColliders)
+        {
+            if (collider.gameObject.tag == "Store")
+            {
+                return collider.gameObject;
+            }
+        }
+
+        return null;
+
+    }
+
+    private GameObject GetNearestDropoffInRange()
+    {
+        // Find the single nearest TRIGGER on the "Ground" layer in a circle
+        // This is all 2d
+
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.5f, LayerMask.GetMask("Dropoff"));
+
+        // Order the colliders by distance
+        System.Array.Sort(hitColliders, (x, y) => Vector2.Distance(transform.position, x.transform.position).CompareTo(Vector2.Distance(transform.position, y.transform.position)));
+
+        foreach (Collider2D collider in hitColliders)
+        {
+            if (collider.gameObject.tag == "Dropoff")
             {
                 return collider.gameObject;
             }
