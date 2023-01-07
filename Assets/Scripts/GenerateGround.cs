@@ -6,6 +6,7 @@ public class GenerateGround : MonoBehaviour
 {
     [SerializeField] GameObject groundPrefab;
     [SerializeField] int gridSize= 5;
+    [SerializeField] GameObject gameRunningManager;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class GenerateGround : MonoBehaviour
                 tile.transform.parent = transform;
                 tile.transform.rotation = Quaternion.Euler(0, 0, 0);
                 tile.tag = "Ground";
+                tile.GetComponent<PlantState>().gameRunningManager = gameRunningManager;
             }
         }
     }

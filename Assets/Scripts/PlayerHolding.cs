@@ -13,9 +13,12 @@ public class PlayerHolding : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        holding = CropType.CandyCane;
-        holdingSeeds = true;
-        money = 100;
+        
+    }
+
+    public void collectMoney(int amount)
+    {
+        money += amount;
     }
 
     // Update is called once per frame

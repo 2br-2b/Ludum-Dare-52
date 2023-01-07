@@ -16,6 +16,8 @@ public class PlantState : MonoBehaviour
     [SerializeField] Sprite grownCoal;
     [SerializeField] Sprite grownTree;
 
+    public GameObject gameRunningManager;
+
     private void Start()
     {
         GetComponent<SpriteRenderer>().sprite = clear;
@@ -24,7 +26,7 @@ public class PlantState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentPlantedState == TileCropState.SeedsPlanted)
+        if (currentPlantedState == TileCropState.SeedsPlanted && gameRunningManager.GetComponent<GameIsRunning>().gameIsRunning)
         {
             secondsBeforeGrow -= Time.deltaTime;
 

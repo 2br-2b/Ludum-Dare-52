@@ -7,23 +7,45 @@ public class Move : MonoBehaviour
 
     [SerializeField] float speed = 0.1f;
     [SerializeField] float drag = 0.95f;
+    [SerializeField] GameObject gameRunningManager;
+
+    bool wasRunning = false;
+    Vector2 lastSpeed = new Vector2(0, 0);
 
     // Update is called once per frame
     void Update()
     {
 
-        Vector2 currentSpeed = GetComponent<Rigidbody2D>().velocity;
-        currentSpeed.x += Input.GetAxis("Horizontal") * speed;
-        currentSpeed.x *= drag;
-        currentSpeed.y += Input.GetAxis("Vertical") * speed;
-        currentSpeed.y *= drag;
-        GetComponent<Rigidbody2D>().velocity = currentSpeed;
-
-        // This will be handled by sprites/animations
-        /*if(Vector3.Magnitude(currentSpeed) > 0.1)
+        if (gameRunningManager.GetComponent<GameIsRunning>().gameIsRunning) 
         {
-            transform.forward = currentSpeed;
-        }*/
+            if (!wasRunning)
+            {
+                GetComponent<Rigidbody2D>().velocity = lastSpeed;
+                wasRunning = true;
+            }
+            
+            Vector2 currentSpeed = GetComponent<Rigidbody2D>().velocity;
+            currentSpeed.x += Input.GetAxis("Horizontal") * speed;
+            currentSpeed.x *= drag;
+            currentSpeed.y += Input.GetAxis("Vertical") * speed;
+            currentSpeed.y *= drag;
+            GetComponent<Rigidbody2D>().velocity = currentSpeed;
+           
+            // This will be handled by sprites/animations
+            /*if(Vector3.Magnitude(currentSpeed) > 0.1)
+            {
+                transform.forward = currentSpeed;
+            }*/
+        }
+        else
+        {
+            if (wasRunning)
+            {
+                lastSpeed = GetComponent<Rigidbody2D>().velocity;
+                GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                wasRunning = false;
+            }
+        }
 
 
     }
