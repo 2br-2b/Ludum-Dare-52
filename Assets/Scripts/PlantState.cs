@@ -10,6 +10,16 @@ public class PlantState : MonoBehaviour
 
     float secondsBeforeGrow = 0f;
 
+    [SerializeField] Sprite clear;
+    [SerializeField] Sprite seeds;
+    [SerializeField] Sprite grownCandyCane;
+    [SerializeField] Sprite grownCoal;
+    [SerializeField] Sprite grownTree;
+
+    private void Start()
+    {
+        GetComponent<SpriteRenderer>().sprite = clear;
+    }
 
     // Update is called once per frame
     void Update()
@@ -31,7 +41,18 @@ public class PlantState : MonoBehaviour
         currentPlantedState = TileCropState.HarvestReady;
         secondsBeforeGrow = 0;
 
-        GetComponent<Renderer>().enabled = true;
+        if(currentCrop == CropType.CandyCane)
+        {
+            GetComponent<SpriteRenderer>().sprite = grownCandyCane;
+        }
+        else if (currentCrop == CropType.Coal)
+        {
+            GetComponent<SpriteRenderer>().sprite = grownCoal;
+        }
+        else if (currentCrop == CropType.Tree)
+        {
+            GetComponent<SpriteRenderer>().sprite = grownTree;
+        }
     }
     
     public void PlantSeeds(int cropType)
@@ -41,8 +62,8 @@ public class PlantState : MonoBehaviour
 
         print("I now have " + currentCrop.ToString() + " seeds planted!");
 
-        GetComponent<Renderer>().enabled = false;
-        
+        GetComponent<SpriteRenderer>().sprite = seeds;
+
         secondsBeforeGrow = Random.Range(10f, 30f);
     }
 
@@ -51,10 +72,10 @@ public class PlantState : MonoBehaviour
         CropType ret = currentCrop;
         
         currentPlantedState = TileCropState.Cleared;
-        GetComponent<Renderer>().enabled = false;
+        GetComponent<SpriteRenderer>().sprite = clear;
 
         print("Harvested!");
-        
+
         return ret;
     }
 }
