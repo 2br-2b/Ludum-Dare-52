@@ -21,7 +21,6 @@ public class GenerateGround : MonoBehaviour
         {
             for(int j=0; j < gridSize; j++)
             {
-                Debug.Log("E");
                 GameObject tile = Instantiate(groundPrefab, new Vector3((i * tileSize) - transform.position.x, (j * tileSize) - transform.position.y, 0) * -1, Quaternion.identity);
                 tile.transform.parent = transform;
                 tile.transform.rotation = Quaternion.Euler(0, 0, 0);
