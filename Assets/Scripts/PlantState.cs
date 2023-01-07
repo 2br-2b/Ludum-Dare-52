@@ -7,22 +7,22 @@ public class PlantState : MonoBehaviour
 
     public enum CropType
     {
-        None,
-        CandyCane,
-        Coal,
-        Tree
+        None = 1,
+        CandyCane = 2,
+        Coal = 3,
+        Tree = 4
     };
 
     public enum TileCropState
     {
-        Snow,
-        Cleared,
-        SeedsPlanted,
-        HarvestReady
+        Snow = 1,
+        Cleared = 2,
+        SeedsPlanted = 3,
+        HarvestReady = 4
     };
 
     public CropType currentCrop = CropType.None;
-    public TileCropState currentState = TileCropState.Snow;
+    public TileCropState currentPlantedState = TileCropState.Cleared;
 
     // Start is called before the first frame update
     void Start()
@@ -36,11 +36,13 @@ public class PlantState : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void PlantSeeds(int cropType)
     {
-        if (collision.gameObject.tag == "Tool")
-        {
-            print("hi!");
-        }
+        currentCrop = (CropType)cropType;
+        currentPlantedState = TileCropState.SeedsPlanted;
+
+        print("I now have " + currentCrop.ToString() + " seeds planted!");
+
+        GetComponent<Renderer>().enabled = false;
     }
 }
