@@ -168,34 +168,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 21
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":84.66658,"yPos":297.666748},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":616.6665,"yPos":271.666748},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":184.666626,"yPos":759.6666},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Say
-    that all one more time?","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":827.666748,"yPos":1476.66663},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Got
-    it!","parentUIDs":[15],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":337.333344,"yPos":133.999985},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":338.6666,"yPos":258.666748},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+  CurrentIDCounter: 25
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":773.6666,"yPos":-29.33326},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":268.666473,"yPos":-12.33326},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":365.6666,"yPos":458.666565},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Say
+    that all one more time?","parentUIDs":[15],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":1008.66675,"yPos":1175.66663},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Got
+    it!","parentUIDs":[15],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":518.3334,"yPos":-167},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":519.6666,"yPos":-42.33326},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
     not quite sure, but I think I recognize you. Have you been here before? (Skip
-    tutorial?)","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":62.66658,"yPos":380.6666},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    thought I recognized you! All right then, good luck!","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":613.6665,"yPos":393.6666},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh!
+    tutorial?)","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":269.6666,"yPos":94.6666641},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    thought I recognized you! Unfortunately, due to inflation, your net worth has
+    reduced to $20! All right then, good luck!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":802.6665,"yPos":142.666626},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh!
     I know why I recognize you! Your brother, the current Santa, worked here a long
-    time ago.","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":608.6665,"yPos":552.666748},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"As
+    time ago.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":789.6665,"yPos":251.666687},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"As
     you know, since the original St. Nicholas died a long time ago, we maintained
     his tradition by choosing a new Santa every 4 years. Those silly humans thinks
-    he''s immortal, but they would never guess the truth!","parentUIDs":[5,18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":607.6665,"yPos":695.6667},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
+    he''s immortal, but they would never guess the truth!","parentUIDs":[5,18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":788.6665,"yPos":394.666626},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
     what we tell the elves, anyway. In the years since that''s started, an Aristocracy
     formed. All the elections we hold are rigged in favor of whoever has the most
-    money.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":608.666748,"yPos":833.6667},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Thus,
+    money.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":789.666748,"yPos":532.6666},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Thus,
     if you want to win the title of Santa Claus, you need to make some money, even
-    more than your brother!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":601.666748,"yPos":984.6667},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Here,
-    I''ll be nice and start you off with $20.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":601.666748,"yPos":1135.66663},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
+    more than your brother!","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":782.666748,"yPos":683.6666},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Here,
+    I''ll be nice and start you off with $20.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":782.666748,"yPos":834.6666},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
     to make money here, you need to make trees for the children in Elbonia. Curiously
     enough, Elbonian children, rather than setting up a Christmas tree and stockings,
-    set up presents and wait for us to deliver them a tree! Fancy that!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":594.666748,"yPos":1301.66675},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
-    you''ll need to create and deliver these trees for the children.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":587.666748,"yPos":1439.66675},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    set up presents and wait for us to deliver them a tree! Fancy that!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":775.666748,"yPos":1000.66675},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
+    you''ll need to create and deliver these trees for the children.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":768.666748,"yPos":1138.66675},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
     odd, but in Elbonia, good children end up with coal to stay warm, and bad children
-    end up with candy canes to rot their teeth out. Who would have guessed?","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":585.666748,"yPos":1585.66663},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
+    end up with candy canes to rot their teeth out. Who would have guessed?","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":766.666748,"yPos":1284.66663},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
     you''ll grab each order a tree and some decorations, coal for the naughty and
-    candy canes for the nice. Got it?","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":266.6666,"yPos":592.6667},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"Let
-    me try one more time.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":857.6666,"yPos":1580.66663},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"All
-    right. Good luck then!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    candy canes for the nice. Got it?","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":447.6666,"yPos":291.666626},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"Let
+    me try explaining that all one more time.","parentUIDs":[16],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1038.66663,"yPos":1279.66663},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"All
+    right. Good luck then!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":133.666656,"yPos":233.666687},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
+    we go!","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Elfred
   DefaultSprite: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
@@ -219,6 +221,7 @@ MonoBehaviour:
   - {fileID: 1539718350}
   - {fileID: 1539718349}
   - {fileID: 1539718348}
+  - {fileID: 1539718360}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -1733,6 +1736,7 @@ GameObject:
   - component: {fileID: 1539718350}
   - component: {fileID: 1539718349}
   - component: {fileID: 1539718348}
+  - component: {fileID: 1539718360}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -2118,6 +2122,25 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 8
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &1539718360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539718340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 22
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
   Audio: {fileID: 0}
