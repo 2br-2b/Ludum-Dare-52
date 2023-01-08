@@ -10,10 +10,13 @@ public class PlayerInventoryManager : MonoBehaviour
     public bool holdingSeeds = false;
     public int money = 0;
 
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
+
     }
 
     public void collectMoney(int amount)
@@ -47,9 +50,8 @@ public class PlayerInventoryManager : MonoBehaviour
                     if (plantState.currentPlantedState == TileCropState.HarvestReady)
                     {
 
-                        gameObject.GetComponent<Animator>().ResetTrigger("CutCandyCanes"); //TODO: uncomment
-                        gameObject.GetComponent<Animator>().ResetTrigger("CutTree");
-                        gameObject.GetComponent<Animator>().ResetTrigger("MineCoal");
+                        anim.ResetTrigger("Chop"); //TODO: uncomment
+                        anim.ResetTrigger("Pick");
 
 
                         holding = plantState.Harvest();
@@ -59,15 +61,15 @@ public class PlayerInventoryManager : MonoBehaviour
                         switch (holding)
                         {
                             case CropType.CandyCane:
-                                gameObject.GetComponent<Animator>().SetTrigger("CutCandyCanes");
+                                anim.SetTrigger("Chop");
                                 break;
 
                             case CropType.Tree:
-                                gameObject.GetComponent<Animator>().SetTrigger("CutTree");
+                                anim.SetTrigger("Chop");
                                 break;
 
                             case CropType.Coal:
-                                gameObject.GetComponent<Animator>().SetTrigger("MineCoal");
+                                anim.SetTrigger("Pick");
                                 break;
 
                             default:
