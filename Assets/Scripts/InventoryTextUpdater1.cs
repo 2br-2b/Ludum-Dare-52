@@ -16,8 +16,8 @@ public class InventoryTextUpdater1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string s = "Holding " + player.GetComponent<PlayerHolding>().holding.ToString();
-        if (player.GetComponent<PlayerHolding>().holdingSeeds)
+        string s = "Holding " + player.GetComponent<PlayerInventoryManager>().holding.ToString();
+        if (player.GetComponent<PlayerInventoryManager>().holdingSeeds)
         {
             s += " seeds";
         }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static PlantState;
 
-public class PlayerHolding : MonoBehaviour
+public class PlayerInventoryManager : MonoBehaviour
 {
 
     public CropType holding = CropType.NoCrop;
@@ -44,7 +44,7 @@ public class PlayerHolding : MonoBehaviour
                     if (plantState.currentPlantedState == TileCropState.HarvestReady)
                     {
 
-                        gameObject.GetComponent<Animator>().ResetTrigger("CutCandyCanes");
+                        gameObject.GetComponent<Animator>().ResetTrigger("CutCandyCanes"); //TODO: uncomment
                         gameObject.GetComponent<Animator>().ResetTrigger("CutTree");
                         gameObject.GetComponent<Animator>().ResetTrigger("MineCoal");
 
@@ -52,7 +52,7 @@ public class PlayerHolding : MonoBehaviour
                         holding = plantState.Harvest();
                         holdingSeeds = false;
                         print("I am now holding " + holding.ToString());
-
+                        /* TODO: uncomment*/
                         switch (holding)
                         {
                             case CropType.CandyCane:

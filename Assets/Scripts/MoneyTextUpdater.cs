@@ -16,6 +16,6 @@ public class MoneyTextUpdater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<TextMeshProUGUI>().text = "$" + player.GetComponent<PlayerHolding>().money;
+        GetComponent<TextMeshProUGUI>().text = "$" + player.GetComponent<PlayerInventoryManager>().money;
     }
 }
