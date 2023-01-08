@@ -9,14 +9,26 @@ public class DropoffPlaceScript : MonoBehaviour
     [SerializeField] GameObject textField;
     [SerializeField] GameObject player;
 
+    [SerializeField] Sprite placedTree;
+    [SerializeField] Sprite placedCandyCane;
+    [SerializeField] Sprite placedCoal;
+
     public bool hasTree = false;
     public bool hasDecoration = false;
     public CropType currentlyLookingFor;
+
+    public Sprite[] listOfTextures;
 
     // Start is called before the first frame update
     void Start()
     {
         createNewOrder();
+
+        listOfTextures = new Sprite[4];
+        listOfTextures[0] = null;
+        listOfTextures[1] = placedCandyCane;
+        listOfTextures[2] = placedCoal;
+        listOfTextures[3] = placedTree;
     }
 
     void createNewOrder()
@@ -39,10 +51,12 @@ public class DropoffPlaceScript : MonoBehaviour
         if (holding == CropType.Tree && !hasTree)
         {
             hasTree = true;
+            GetComponentsInChildren<SpriteRenderer>()[1].sprite = listOfTextures[(int)CropType.Tree - 1];
         }
         else if (holding == currentlyLookingFor && !hasDecoration)
         {
             hasDecoration = true;
+            GetComponentsInChildren<SpriteRenderer>()[1].sprite = listOfTextures[(int)holding - 1];
         }
         
         if(hasTree && hasDecoration)
@@ -50,6 +64,8 @@ public class DropoffPlaceScript : MonoBehaviour
             // Give money
             player.GetComponent<PlayerHolding>().money += 12;
             createNewOrder();
+
+            GetComponentsInChildren<SpriteRenderer>()[1].sprite = listOfTextures[0];
         }
         
     }

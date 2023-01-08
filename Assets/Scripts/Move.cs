@@ -30,7 +30,13 @@ public class Move : MonoBehaviour
             currentSpeed.y += Input.GetAxis("Vertical") * speed;
             currentSpeed.y *= drag;
             GetComponent<Rigidbody2D>().velocity = currentSpeed;
-           
+
+            GetComponent<Animator>().SetFloat("Speed", currentSpeed.magnitude);
+            
+            // The direction the sprite is pointing in degrees, with right being 0
+            float direction = Mathf.Atan2(currentSpeed.y, currentSpeed.x) * Mathf.Rad2Deg;
+            GetComponent<Animator>().SetFloat("Direction", direction);
+            
             // This will be handled by sprites/animations
             /*if(Vector3.Magnitude(currentSpeed) > 0.1)
             {

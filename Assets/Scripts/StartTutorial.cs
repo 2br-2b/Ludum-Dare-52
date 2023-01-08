@@ -29,7 +29,7 @@ public class StartTutorial : MonoBehaviour
 
     void OnConversationEnded()
     {
-        Debug.Log("A conversation has ended.");
+        //Debug.Log("A conversation has ended.");
         gameRunningManager.GetComponent<GameIsRunning>().StartGame();
     }
 }

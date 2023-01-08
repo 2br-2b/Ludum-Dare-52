@@ -28,9 +28,13 @@ public class PlayerHolding : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            // Try to interact
+
+            // Check if the player is holding something
             if (holding == CropType.NoCrop)
             {
-                // The player is holding nothing
+                // The player is holding nothing, so try to pick up a plant
+                
                 GameObject nearest = GetNearestTileInRange();
 
                 if (nearest != null)
@@ -39,9 +43,33 @@ public class PlayerHolding : MonoBehaviour
 
                     if (plantState.currentPlantedState == TileCropState.HarvestReady)
                     {
+
+                        gameObject.GetComponent<Animator>().ResetTrigger("CutCandyCanes");
+                        gameObject.GetComponent<Animator>().ResetTrigger("CutTree");
+                        gameObject.GetComponent<Animator>().ResetTrigger("MineCoal");
+
+
                         holding = plantState.Harvest();
                         holdingSeeds = false;
                         print("I am now holding " + holding.ToString());
+
+                        switch (holding)
+                        {
+                            case CropType.CandyCane:
+                                gameObject.GetComponent<Animator>().SetTrigger("CutCandyCanes");
+                                break;
+
+                            case CropType.Tree:
+                                gameObject.GetComponent<Animator>().SetTrigger("CutTree");
+                                break;
+
+                            case CropType.Coal:
+                                gameObject.GetComponent<Animator>().SetTrigger("MineCoal");
+                                break;
+
+                            default:
+                                break;
+                        }
                     }
                 }
                 else
