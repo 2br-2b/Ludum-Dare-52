@@ -7,6 +7,7 @@ public class GameIsRunning : MonoBehaviour
     public bool gameIsRunning = false;
     [SerializeField] GameObject pauseText;
     public bool started = false;
+    float timeRunning = 0f;
 
     public void ResumeGame()
     {
@@ -18,6 +19,12 @@ public class GameIsRunning : MonoBehaviour
     {
         gameIsRunning = false;
         pauseText.SetActive(true);
+    }
+
+    public void StopGame()
+    {
+        gameIsRunning = false;
+        pauseText.SetActive(false);
     }
 
     public void StartGame()
@@ -41,7 +48,14 @@ public class GameIsRunning : MonoBehaviour
             gameIsRunning = false;
         }
 
-        print("Started" + started);
-        print("Is running" + gameIsRunning);
+        if (gameIsRunning)
+        {
+            timeRunning += Time.deltaTime;
+        }
+    }
+
+    public float getTimeRunning()
+    {
+        return timeRunning;
     }
 }
