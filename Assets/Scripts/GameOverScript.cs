@@ -56,4 +56,9 @@ public class GameOverScript : MonoBehaviour
     {
         return gameLengthInSeconds - gameRunningManager.getTimeRunning();
     }
+
+    public void SetGameLength(int seconds)
+    {
+        gameLengthInSeconds = seconds;
+    }
 }

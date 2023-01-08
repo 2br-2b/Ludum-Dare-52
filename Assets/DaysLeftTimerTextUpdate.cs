@@ -31,7 +31,16 @@ public class DaysLeftTimerTextUpdate : MonoBehaviour
         }
         
         int days_left  = ((int)gameOverManager.GetTimeLeft()) / 60 + 1;
-        textMesh.text = "Days Left: " + days_left.ToString();
+
+        if (days_left > 10)
+        {
+            textMesh.text = "Unlimited Mode: Day " + (int)(gameRunningManager.getTimeRunning() / 60 + 1);
+        }
+        else
+        {
+            textMesh.text = "Days Left: " + days_left;
+        }
+        
 
     }
 }
