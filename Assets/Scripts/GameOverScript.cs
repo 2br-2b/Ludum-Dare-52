@@ -51,4 +51,9 @@ public class GameOverScript : MonoBehaviour
         ConversationManager.Instance.SetInt("Money", moneys);
         finalScore.GetComponent<TextMeshProUGUI>().text = "$" + moneys;
     }
+
+    public float GetTimeLeft()
+    {
+        return gameLengthInSeconds - gameRunningManager.getTimeRunning();
+    }
 }

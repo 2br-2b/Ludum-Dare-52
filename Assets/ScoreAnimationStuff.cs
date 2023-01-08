@@ -30,8 +30,6 @@ public class ScoreAnimationStuff : MonoBehaviour
         float q = totalPixelsToMove * (Time.deltaTime / timeToMove);
         posy += q;
         tsf.SetPositionAndRotation(new Vector3(posx, posy, 0), rot);
-        print("posy:" + posy);
-
         
     }
 
