@@ -12,6 +12,15 @@ public class Move : MonoBehaviour
     bool wasRunning = false;
     Vector2 lastSpeed = new Vector2(0, 0);
 
+    Rigidbody2D rbody;
+    Animator anim;
+
+    void Start(){
+
+        rbody = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -20,19 +29,28 @@ public class Move : MonoBehaviour
         {
             if (!wasRunning)
             {
-                GetComponent<Rigidbody2D>().velocity = lastSpeed;
+                rbody.velocity = lastSpeed;
                 wasRunning = true;
             }
             
-            Vector2 currentSpeed = GetComponent<Rigidbody2D>().velocity;
+            Vector2 currentSpeed = rbody.velocity;
             currentSpeed.x += Input.GetAxis("Horizontal") * speed;
             currentSpeed.x *= drag;
             currentSpeed.y += Input.GetAxis("Vertical") * speed;
             currentSpeed.y *= drag;
-            GetComponent<Rigidbody2D>().velocity = currentSpeed;
+            rbody.velocity = currentSpeed;
 
-            GetComponent<Animator>().SetFloat("Speed", currentSpeed.magnitude); //TODO: uncomment
-
+            Vector2 movement_vector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            if (movement_vector != Vector2.zero)
+            {
+                anim.SetBool("IsWalking", true);
+                anim.SetFloat("x", movement_vector.x);
+                anim.SetFloat("y", movement_vector.y);
+            }
+            if (movement_vector == Vector2.zero){
+                anim.SetBool("IsWalking", false);
+            }
+            
             // The direction the sprite is pointing in degrees, with right being 0
             float direction = Mathf.Atan2(currentSpeed.y, currentSpeed.x) * Mathf.Rad2Deg;
             GetComponent<Animator>().SetFloat("Direction", direction); //TODO: uncomment
@@ -47,9 +65,10 @@ public class Move : MonoBehaviour
         {
             if (wasRunning)
             {
-                lastSpeed = GetComponent<Rigidbody2D>().velocity;
-                GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                lastSpeed = rbody.velocity;
+                rbody.velocity = Vector2.zero;
                 wasRunning = false;
+
             }
         }
 
