@@ -8,7 +8,7 @@ public class Store : MonoBehaviour
     [SerializeField] public CropType cropSelling;
     [SerializeField] public GameObject buyable = null;
 
-    public void buyCrop()
+    public virtual void buyCrop()
     {
         if(buyable != null)
         {

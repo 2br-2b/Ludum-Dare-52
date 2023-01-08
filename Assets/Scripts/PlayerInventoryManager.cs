@@ -24,8 +24,11 @@ public class PlayerInventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+
+        GameObject nearest;
+
+
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // Try to interact
@@ -35,7 +38,7 @@ public class PlayerInventoryManager : MonoBehaviour
             {
                 // The player is holding nothing, so try to pick up a plant
                 
-                GameObject nearest = GetNearestTileInRange();
+                nearest = GetNearestTileInRange();
 
                 if (nearest != null)
                 {
@@ -75,25 +78,7 @@ public class PlayerInventoryManager : MonoBehaviour
                 else
                 {
                     // The player is holding nothing and is not near any plants
-                    nearest = GetNearestStoreInRange();
-                    if (nearest != null)
-                    {
-                        // The player is holding nothing and is near a store
-                        Store store = nearest.GetComponent<Store>();
-                        
-                        if(store.price > money)
-                        {
-                            // TODO: not enough money
-                        }
-                        else
-                        {
-                            money -= store.price;
-                            holdingSeeds = true;
-                            holding = store.cropSelling;
-
-                        }
-                        
-                    }
+                    
                 }
 
             }
@@ -103,7 +88,7 @@ public class PlayerInventoryManager : MonoBehaviour
                 // Find the single nearest TRIGGER on the "Ground" layer in a circle
                 // This is all 2d
 
-                GameObject nearest = GetNearestTileInRange();
+                nearest = GetNearestTileInRange();
 
                 if (nearest != null)
                 {
@@ -128,7 +113,6 @@ public class PlayerInventoryManager : MonoBehaviour
             }
             else
             {
-                print("e");
                 // The player is holding some grown plant
 
                 GameObject dropoff = GetNearestDropoffInRange();
@@ -139,6 +123,35 @@ public class PlayerInventoryManager : MonoBehaviour
                     dropoffScript.Deposit(holding);
                     holding = CropType.NoCrop;
                 }
+            }
+
+            // Check for a store
+            
+            nearest = GetNearestStoreInRange();
+            if (nearest != null)
+            {
+                // The player is near a store
+                Store store = nearest.GetComponent<Store>();
+
+                if (store.cropSelling != CropType.NoCrop && holding != CropType.NoCrop) return; // The player is trying to buy something while holding something
+
+                if (store.price > money)
+                {
+                    print("Not enough money");
+                    // TODO: not enough money
+                }
+                else
+                {
+                    money -= store.price;
+
+                    if (store.cropSelling != CropType.NoCrop)
+                    {
+                        holding = store.cropSelling;
+                        holdingSeeds = true;
+                    }
+                    store.buyCrop();
+                }
+
             }
         }
     }
