@@ -367,6 +367,8 @@ MonoBehaviour:
   holdingSeeds: 1
   money: 0
   debugManager: {fileID: 2110343799}
+  moneyUIPrefab: {fileID: 4341636235128332454, guid: 16e1cdac798da104ca5f02d58d3c62b8, type: 3}
+  canvasTransform: {fileID: 424143157}
 --- !u!96 &40283581
 TrailRenderer:
   serializedVersion: 2
@@ -3556,7 +3558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8963512f6fa9b414894646d62ba0b302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDebug: 0
+  isDebug: 1
 --- !u!4 &2110343801
 Transform:
   m_ObjectHideFlags: 0

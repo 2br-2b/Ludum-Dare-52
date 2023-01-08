@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using static PlantState;
 
@@ -10,14 +12,19 @@ public class PlayerInventoryManager : MonoBehaviour
     public bool holdingSeeds = false;
     public int money = 0;
     [SerializeField] GameObject debugManager;
+    [SerializeField] GameObject moneyUIPrefab;
+    [SerializeField] Transform canvasTransform;
+
 
     Animator anim;
+    bool debug;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
-        if (debugManager.GetComponent<DebugState>().isDebug)
+        debug = debugManager.GetComponent<DebugState>().isDebug;
+        if (debug)
         {
             money = 1000;
         }
@@ -26,6 +33,19 @@ public class PlayerInventoryManager : MonoBehaviour
     public void collectMoney(int amount)
     {
         money += amount;
+        // Get the location on the canvas of this sprite
+        Vector3 e = Camera.main.WorldToScreenPoint(transform.position);
+        GameObject go = Instantiate(moneyUIPrefab, e, Quaternion.identity, canvasTransform);
+        go.GetComponent<TextMeshProUGUI>().text = "+$" + amount;
+    }
+
+    public void payMoney(int amount)
+    {
+        money -= amount;
+        // Get the location on the canvas of this sprite
+        Vector3 e = Camera.main.WorldToScreenPoint(transform.position);
+        GameObject go = Instantiate(moneyUIPrefab, e, Quaternion.identity, canvasTransform);
+        go.GetComponent<TextMeshProUGUI>().text = "-$" + amount;
     }
 
     // Update is called once per frame
@@ -148,7 +168,7 @@ public class PlayerInventoryManager : MonoBehaviour
                 }
                 else
                 {
-                    money -= store.price;
+                    payMoney(store.price);
 
                     if (store.cropSelling != CropType.NoCrop)
                     {
@@ -159,6 +179,11 @@ public class PlayerInventoryManager : MonoBehaviour
                 }
 
             }
+        }
+
+        if(debug && Input.GetKeyDown(KeyCode.E))
+        {
+            collectMoney(10);
         }
     }
 
