@@ -6,12 +6,22 @@ using DialogueEditor;
 public class StartTutorial : MonoBehaviour
 {
     [SerializeField] NPCConversation tutorialConversation;
+    [SerializeField] NPCConversation blankConversation;
     [SerializeField] GameObject gameRunningManager;
+    [SerializeField] GameObject debugger;
 
     // Start is called before the first frame update
     void Start()
     {
-        ConversationManager.Instance.StartConversation(tutorialConversation);
+        if (debugger.GetComponent<DebugState>().isDebug)
+        {
+            ConversationManager.Instance.StartConversation(blankConversation);
+        }
+        else
+        {
+            ConversationManager.Instance.StartConversation(tutorialConversation);
+        }
+        
     }
 
     // Subscribe to the OnConversationEnded event

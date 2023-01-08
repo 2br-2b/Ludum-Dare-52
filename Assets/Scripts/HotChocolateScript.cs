@@ -16,7 +16,6 @@ public class HotChocolateScript : Store
 
     override public void buyCrop()
     {
-        print("E");
         player.GetComponent<Move>().increaseSpeed(0.1f);
     }
 }

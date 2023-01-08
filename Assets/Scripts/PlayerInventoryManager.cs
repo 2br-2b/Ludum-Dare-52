@@ -9,6 +9,7 @@ public class PlayerInventoryManager : MonoBehaviour
     public CropType holding = CropType.NoCrop;
     public bool holdingSeeds = false;
     public int money = 0;
+    [SerializeField] GameObject debugManager;
 
     Animator anim;
 
@@ -16,7 +17,10 @@ public class PlayerInventoryManager : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-
+        if (debugManager.GetComponent<DebugState>().isDebug)
+        {
+            money = 1000;
+        }
     }
 
     public void collectMoney(int amount)

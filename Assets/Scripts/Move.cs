@@ -8,6 +8,7 @@ public class Move : MonoBehaviour
     [SerializeField] float speed = 0.2f;
     [SerializeField] float drag = 0.9f;
     [SerializeField] GameObject gameRunningManager;
+    [SerializeField] GameObject debugManager;
 
     bool wasRunning = false;
     Vector2 lastSpeed = new Vector2(0, 0);
@@ -19,6 +20,12 @@ public class Move : MonoBehaviour
 
         rbody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        if (debugManager.GetComponent<DebugState>().isDebug)
+        {
+            speed = 0.5f;
+        }
+            
     }
 
     // Update is called once per frame
