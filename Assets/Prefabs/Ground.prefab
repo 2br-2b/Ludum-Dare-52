@@ -160,7 +160,7 @@ SpriteRenderer:
   m_SortingLayerID: 1691088059
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 20dbe1133dfaec2408810dbccbc60a70, type: 3}
+  m_Sprite: {fileID: 699217502, guid: 371ef6085bbcd1b4aaad336d29a2de3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCrop: 1
   currentPlantedState: 2
-  clear: {fileID: 21300000, guid: 20dbe1133dfaec2408810dbccbc60a70, type: 3}
+  clear: {fileID: 699217502, guid: 371ef6085bbcd1b4aaad336d29a2de3d, type: 3}
   ungrownCandyCane: {fileID: -1280000213, guid: 965c334cc0df17749827e3e469a28831, type: 3}
   ungrownCoal: {fileID: -623344268, guid: 965c334cc0df17749827e3e469a28831, type: 3}
   ungrownTree: {fileID: -1385352815, guid: 965c334cc0df17749827e3e469a28831, type: 3}
