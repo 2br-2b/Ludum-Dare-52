@@ -30,7 +30,7 @@ public class GameOverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasRun || gameRunningManager.getTimeRunning() < gameLengthInSeconds) return;
+        if (hasRun || gameRunningManager.GetTimeRunning() < gameLengthInSeconds) return;
         hasRun = true;
         // Start a coroutine
         StartCoroutine(EndGame());
@@ -54,7 +54,7 @@ public class GameOverScript : MonoBehaviour
 
     public float GetTimeLeft()
     {
-        return gameLengthInSeconds - gameRunningManager.getTimeRunning();
+        return gameLengthInSeconds - gameRunningManager.GetTimeRunning();
     }
 
     public void SetGameLength(int seconds)

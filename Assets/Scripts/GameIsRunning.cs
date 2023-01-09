@@ -26,9 +26,17 @@ public class GameIsRunning : MonoBehaviour
 
     public void PauseGame()
     {
+        PauseGame(true);
+    }
+
+    public void PauseGame(bool showPauseText)
+    {
         gameIsRunning = false;
-        pauseText.SetActive(true);
-        musicManager.PauseMusic();
+        if (showPauseText)
+        {
+            pauseText.SetActive(true);
+            musicManager.PauseMusic();
+        }
     }
 
     public void StopGame()
@@ -66,7 +74,7 @@ public class GameIsRunning : MonoBehaviour
         }
     }
 
-    public float getTimeRunning()
+    public float GetTimeRunning()
     {
         return timeRunning;
     }

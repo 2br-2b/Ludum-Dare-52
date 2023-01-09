@@ -80,6 +80,7 @@ public class MusicManager : MonoBehaviour
         AudioSource newClip = gameObject.AddComponent<AudioSource>();
         newClip.clip = clip;
         newClip.volume = 0;
+        newClip.loop = true;
         //newClip.outputAudioMixerGroup = audioSource.outputAudioMixerGroup;
         newClip.Play();
         

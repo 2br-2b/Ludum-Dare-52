@@ -79,15 +79,13 @@ public class DropoffPlaceScript : MonoBehaviour
         else
         {
             // The store doesn't need this
-            player.GetComponent<PlayerInventoryManager>().collectMoney(Random.Range(1, 3));
-
-            //throw new System.Exception("You can't deposit that here!");
+            throw new System.Exception("You can't deposit that here!");
         }
         
         if(hasTree && hasDecoration)
         {
             // Give money
-            player.GetComponent<PlayerInventoryManager>().collectMoney(Random.Range(10, 40));
+            player.GetComponent<PlayerInventoryManager>().collectMoney(Random.Range(12, 40));
             createNewOrder();
 
             GetComponentsInChildren<SpriteRenderer>()[1].sprite = listOfTextures[0];

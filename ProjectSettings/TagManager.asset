@@ -8,6 +8,7 @@ TagManager:
   - Tool
   - Store
   - Dropoff
+  - Buyback
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Tool
   - Store
   - Dropoff
-  - 
+  - Buyback
   - 
   - 
   - 

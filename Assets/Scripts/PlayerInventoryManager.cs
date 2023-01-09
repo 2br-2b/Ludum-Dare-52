@@ -15,6 +15,7 @@ public class PlayerInventoryManager : MonoBehaviour
     [SerializeField] GameObject moneyUIPrefab;
     [SerializeField] Transform canvasTransform;
 
+    int numberOfPlants = 0;
 
     Animator anim;
     bool debug;
@@ -149,7 +150,7 @@ public class PlayerInventoryManager : MonoBehaviour
                             };
 
                             MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
-
+                            numberOfPlants++;
                             return;
                         }
                         else if(plantState.currentPlantedState == TileCropState.SeedsPlanted)
@@ -175,6 +176,20 @@ public class PlayerInventoryManager : MonoBehaviour
                     }
 
                 }
+                else
+                {
+                    // The player is holding something and is not near any plant tiles
+
+                    nearest = GetNearestBuybackInRange();
+
+                    if(nearest != null)
+                    {
+                        // They are selling something to the buyback
+
+                        SellItemBuyback();
+
+                    }
+                }
             }
             else
             {
@@ -189,6 +204,7 @@ public class PlayerInventoryManager : MonoBehaviour
                     {
                         dropoffScript.Deposit(holding);
                         holding = CropType.NoCrop;
+                        numberOfPlants--;
                     }
                     catch (System.Exception e)
                     {
@@ -198,13 +214,26 @@ public class PlayerInventoryManager : MonoBehaviour
                             string[] listOfResponses =
                             {
                                 "You can't deposit that!",
-                                "You don't need that!"
+                                "You don't need that!",
+                                "Try selling to Elfonzo!"
                             };
 
                             MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
                         }
                     }
 
+                }
+                else
+                {
+                    nearest = GetNearestBuybackInRange();
+
+                    if (nearest != null)
+                    {
+                        // They are selling a grown tree to the buyback
+
+                        SellItemBuyback();
+
+                    }
                 }
             }
 
@@ -240,6 +269,12 @@ public class PlayerInventoryManager : MonoBehaviour
                 }
                 else
                 {
+                    if(store.cropSelling == CropType.NoCrop && (money + (5 * numberOfPlants)) < 10 + store.price)
+                    {
+                        MakeTextPopup("Don't softlock yourself!");
+                        return;
+                    }
+
                     payMoney(store.price);
 
                     if (store.cropSelling != CropType.NoCrop)
@@ -258,6 +293,8 @@ public class PlayerInventoryManager : MonoBehaviour
         {
             collectMoney(10);
         }
+
+        print("plants:" + numberOfPlants);
     }
 
     private GameObject GetNearestTileInRange()
@@ -331,5 +368,42 @@ public class PlayerInventoryManager : MonoBehaviour
         Vector3 e = Camera.main.WorldToScreenPoint(transform.position);
         GameObject go = Instantiate(moneyUIPrefab, e, Quaternion.identity, canvasTransform);
         go.GetComponent<TextMeshProUGUI>().text = text;
+    }
+
+    private GameObject GetNearestBuybackInRange()
+    {
+        // Find the single nearest TRIGGER on the "Ground" layer in a circle
+        // This is all 2d
+
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 0.5f, LayerMask.GetMask("Buyback"));
+
+        // Order the colliders by distance
+        System.Array.Sort(hitColliders, (x, y) => Vector2.Distance(transform.position, x.transform.position).CompareTo(Vector2.Distance(transform.position, y.transform.position)));
+
+        foreach (Collider2D collider in hitColliders)
+        {
+            if (collider.gameObject.tag == "Buyback")
+            {
+                return collider.gameObject;
+            }
+        }
+
+        return null;
+
+    }
+
+    private void SellItemBuyback()
+    {
+        numberOfPlants--;
+        holding = CropType.NoCrop;
+        if(money <= 10)
+        {
+            collectMoney(5);
+        }
+        else
+        {
+            collectMoney(Random.Range(1, 4));
+        }
+        
     }
 }

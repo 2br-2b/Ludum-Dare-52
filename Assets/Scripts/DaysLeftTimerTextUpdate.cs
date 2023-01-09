@@ -34,7 +34,7 @@ public class DaysLeftTimerTextUpdate : MonoBehaviour
 
         if (days_left > 10)
         {
-            textMesh.text = "Unlimited Mode: Day " + (int)(gameRunningManager.getTimeRunning() / 60 + 1);
+            textMesh.text = "Unlimited Mode: Day " + (int)(gameRunningManager.GetTimeRunning() / 60 + 1);
         }
         else
         {
