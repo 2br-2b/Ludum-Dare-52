@@ -80,7 +80,7 @@ public class DropoffPlaceScript : MonoBehaviour
         if(hasTree && hasDecoration)
         {
             // Give money
-            player.GetComponent<PlayerInventoryManager>().collectMoney(15);
+            player.GetComponent<PlayerInventoryManager>().collectMoney(Random.Range(10, 40));
             createNewOrder();
 
             GetComponentsInChildren<SpriteRenderer>()[1].sprite = listOfTextures[0];

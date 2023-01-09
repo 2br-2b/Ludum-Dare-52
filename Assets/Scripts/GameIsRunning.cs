@@ -9,27 +9,39 @@ public class GameIsRunning : MonoBehaviour
     public bool started = false;
     float timeRunning = 0f;
 
+    [SerializeField] GameObject musicManagerGameObject;
+    MusicManager musicManager;
+    
+    public void Start()
+    {
+        musicManager = musicManagerGameObject.GetComponent<MusicManager>();
+    }
+
     public void ResumeGame()
     {
         gameIsRunning = true;
         pauseText.SetActive(false);
+        musicManager.ResumeMusic();
     }
 
     public void PauseGame()
     {
         gameIsRunning = false;
         pauseText.SetActive(true);
+        musicManager.PauseMusic();
     }
 
     public void StopGame()
     {
         gameIsRunning = false;
         pauseText.SetActive(false);
+        musicManager.SetClipFinalMusic();
     }
 
     public void StartGame()
     {
         started = true;
+        musicManager.SwitchClipToMain();
         ResumeGame();
     }
 

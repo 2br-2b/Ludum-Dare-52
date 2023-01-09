@@ -10,6 +10,9 @@ public class StartTutorial : MonoBehaviour
     [SerializeField] GameObject gameRunningManager;
     [SerializeField] GameObject debugger;
 
+    [SerializeField] GameObject musicManagerGameObject;
+    MusicManager musicManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,8 @@ public class StartTutorial : MonoBehaviour
         {
             ConversationManager.Instance.StartConversation(tutorialConversation);
         }
-        
+
+        musicManager = musicManagerGameObject.GetComponent<MusicManager>();
     }
 
     // Subscribe to the OnConversationEnded event
@@ -41,5 +45,6 @@ public class StartTutorial : MonoBehaviour
     {
         //Debug.Log("A conversation has ended.");
         gameRunningManager.GetComponent<GameIsRunning>().StartGame();
+        musicManager.SwitchClipToMain();
     }
 }
