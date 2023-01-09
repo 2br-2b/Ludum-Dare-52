@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Elfered : MonoBehaviour
 {
-    bool hasShownUp = false;
+    public bool hasShownUp = false;
 
     [SerializeField] GameObject gameRunningManagerObject;
     GameIsRunning grm;

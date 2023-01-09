@@ -29,7 +29,7 @@ public class Move : MonoBehaviour
             speed = 0.5f;
         }
 
-        clippy = GetComponent<AudioSource>();
+        clippy = GetComponentsInChildren<AudioSource>()[1];
 
 
     }

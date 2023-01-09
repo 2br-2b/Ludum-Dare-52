@@ -22,10 +22,13 @@ public class PlantState : MonoBehaviour
 
     GrowSpeedManager gsm;
 
+    AudioSource growSound;
+
     private void Start()
     {
         GetComponent<SpriteRenderer>().sprite = clear;
         gsm = transform.parent.GetComponent<GrowSpeedManager>();
+        growSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -60,6 +63,8 @@ public class PlantState : MonoBehaviour
         {
             GetComponentsInChildren<SpriteRenderer>()[1].sprite = grownTree;
         }
+
+        growSound.Play();
     }
     
     public void PlantSeeds(int cropType)

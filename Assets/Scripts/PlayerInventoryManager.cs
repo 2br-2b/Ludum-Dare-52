@@ -20,6 +20,16 @@ public class PlayerInventoryManager : MonoBehaviour
     Animator anim;
     bool debug;
 
+    [SerializeField] AudioClip buyCandyCane, buyCoal, buyTree;
+    [SerializeField] AudioClip depositBad, depositGood;
+    [SerializeField] AudioClip harvestCandyCane, harvestCoal, harvestTree;
+    [SerializeField] AudioClip noMoney, genericError, sellToElfonzo;
+
+    [SerializeField] AudioClip buyCropMagic, buyHotChocolate, somethingGrows, plantSomething;
+        
+
+    AudioSource sour;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +39,10 @@ public class PlayerInventoryManager : MonoBehaviour
         {
             money = 1000;
         }
+
+        sour = GetComponent<AudioSource>();
+        genericError = depositBad;
+        sellToElfonzo = depositGood;
     }
 
     public void collectMoney(int amount)
@@ -83,14 +97,17 @@ public class PlayerInventoryManager : MonoBehaviour
                         {
                             case CropType.CandyCane:
                                 anim.SetTrigger("Chop");
+                                playSound(harvestCandyCane);
                                 break;
 
                             case CropType.Tree:
                                 anim.SetTrigger("Chop");
+                                playSound(harvestTree);
                                 break;
 
                             case CropType.Coal:
                                 anim.SetTrigger("Pick");
+                                playSound(harvestCoal);
                                 break;
 
                             default:
@@ -107,16 +124,17 @@ public class PlayerInventoryManager : MonoBehaviour
                         };
 
                         MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+
+                        playSound(genericError);
                     }else if(plantState.currentPlantedState == TileCropState.Cleared)
                     {
                         // The player is holding nohing and the land is clear
-                        
+                        playSound(genericError);
                     }
                 }
                 else
                 {
                     // The player is holding nothing and is not near any plants
-                    
                 }
 
             }
@@ -151,6 +169,8 @@ public class PlayerInventoryManager : MonoBehaviour
 
                             MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
                             numberOfPlants++;
+
+                            playSound(plantSomething);
                             return;
                         }
                         else if(plantState.currentPlantedState == TileCropState.SeedsPlanted)
@@ -163,6 +183,8 @@ public class PlayerInventoryManager : MonoBehaviour
                             };
 
                             MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+
+                            playSound(genericError);
                         }
                         else if (plantState.currentPlantedState == TileCropState.HarvestReady)
                         {
@@ -172,6 +194,8 @@ public class PlayerInventoryManager : MonoBehaviour
                             };
 
                             MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+
+                            playSound(genericError);
                         }
                     }
 
@@ -205,6 +229,7 @@ public class PlayerInventoryManager : MonoBehaviour
                         dropoffScript.Deposit(holding);
                         holding = CropType.NoCrop;
                         numberOfPlants--;
+                        playSound(depositGood);
                     }
                     catch (System.Exception e)
                     {
@@ -219,6 +244,8 @@ public class PlayerInventoryManager : MonoBehaviour
                             };
 
                             MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+
+                            playSound(depositBad);
                         }
                     }
 
@@ -254,6 +281,7 @@ public class PlayerInventoryManager : MonoBehaviour
                     };
 
                     MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+                    playSound(genericError);
                     return; // The player is trying to buy something while holding something
                 }
 
@@ -266,12 +294,15 @@ public class PlayerInventoryManager : MonoBehaviour
                     };
 
                     MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+
+                    playSound(noMoney);
                 }
                 else
                 {
                     if(store.cropSelling == CropType.NoCrop && (money + (5 * numberOfPlants)) < 10 + store.price)
                     {
                         MakeTextPopup("Don't softlock yourself!");
+                        playSound(noMoney);
                         return;
                     }
 
@@ -281,6 +312,32 @@ public class PlayerInventoryManager : MonoBehaviour
                     {
                         holding = store.cropSelling;
                         holdingSeeds = true;
+
+                        switch (store.cropSelling)
+                        {
+                            case CropType.CandyCane:
+                                playSound(buyCandyCane);
+                                break;
+
+                            case CropType.Coal:
+                                playSound(buyCoal);
+                                break;
+
+                            case CropType.Tree:
+                                playSound(buyTree);
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        if(store.selling == "hot chocolate")
+                        {
+                            playSound(buyHotChocolate);
+                        }
+                        else
+                        {
+                            playSound(buyCropMagic);
+                        }
                     }
                     store.buyCrop();
                     
@@ -404,6 +461,17 @@ public class PlayerInventoryManager : MonoBehaviour
         {
             collectMoney(Random.Range(1, 4));
         }
-        
+
+        playSound(sellToElfonzo);
+    }
+
+
+    private void playSound(AudioClip sound)
+    {
+        if (sound != null)
+        {
+            sour.clip = sound;
+            sour.Play();
+        }
     }
 }
