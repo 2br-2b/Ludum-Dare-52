@@ -76,6 +76,13 @@ public class DropoffPlaceScript : MonoBehaviour
             GetComponentsInChildren<SpriteRenderer>()[1].sprite = listOfTextures[(int)holding - 1];
             textGui.text = orderText+"\n x " + currentlyLookingFor.ToString() + "\n - " + CropType.Tree.ToString();
         }
+        else
+        {
+            // The store doesn't need this
+            player.GetComponent<PlayerInventoryManager>().collectMoney(Random.Range(1, 3));
+
+            //throw new System.Exception("You can't deposit that here!");
+        }
         
         if(hasTree && hasDecoration)
         {

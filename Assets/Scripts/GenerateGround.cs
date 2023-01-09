@@ -7,7 +7,7 @@ public class GenerateGround : MonoBehaviour
     [SerializeField] GameObject groundPrefab;
     [SerializeField] int gridSize= 5;
     [SerializeField] GameObject gameRunningManager;
-
+    
     // Start is called before the first frame update
     void Start()
     {

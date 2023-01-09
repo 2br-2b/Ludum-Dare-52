@@ -34,18 +34,14 @@ public class PlayerInventoryManager : MonoBehaviour
     {
         money += amount;
         // Get the location on the canvas of this sprite
-        Vector3 e = Camera.main.WorldToScreenPoint(transform.position);
-        GameObject go = Instantiate(moneyUIPrefab, e, Quaternion.identity, canvasTransform);
-        go.GetComponent<TextMeshProUGUI>().text = "+$" + amount;
+        MakeTextPopup("+$" + amount);
     }
 
     public void payMoney(int amount)
     {
         money -= amount;
         // Get the location on the canvas of this sprite
-        Vector3 e = Camera.main.WorldToScreenPoint(transform.position);
-        GameObject go = Instantiate(moneyUIPrefab, e, Quaternion.identity, canvasTransform);
-        go.GetComponent<TextMeshProUGUI>().text = "-$" + amount;
+        MakeTextPopup("-$" + amount);
     }
 
     // Update is called once per frame
@@ -81,7 +77,7 @@ public class PlayerInventoryManager : MonoBehaviour
                         holding = plantState.Harvest();
                         holdingSeeds = false;
                         print("I am now holding " + holding.ToString());
-                        /* TODO: uncomment*/
+                        
                         switch (holding)
                         {
                             case CropType.CandyCane:
@@ -99,6 +95,21 @@ public class PlayerInventoryManager : MonoBehaviour
                             default:
                                 break;
                         }
+                    }
+                    else if(plantState.currentPlantedState == TileCropState.SeedsPlanted)
+                    {
+                        string[] listOfResponses =
+                        {
+                            "It's not ready yet!",
+                            "It hasn't sprouted yet!",
+                            "Give it time to grow!"
+                        };
+
+                        MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+                    }else if(plantState.currentPlantedState == TileCropState.Cleared)
+                    {
+                        // The player is holding nohing and the land is clear
+                        
                     }
                 }
                 else
@@ -131,7 +142,35 @@ public class PlayerInventoryManager : MonoBehaviour
                             plantState.PlantSeeds((int)holding);
                             holding = CropType.NoCrop;
                             holdingSeeds = false;
+
+                            string[] listOfResponses =
+                            {
+                                "Planted!"
+                            };
+
+                            MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+
                             return;
+                        }
+                        else if(plantState.currentPlantedState == TileCropState.SeedsPlanted)
+                        {
+
+                            string[] listOfResponses =
+                            {
+                                "Something else is planted here!",
+                                "This spot is occupied!"
+                            };
+
+                            MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+                        }
+                        else if (plantState.currentPlantedState == TileCropState.HarvestReady)
+                        {
+                            string[] listOfResponses =
+                            {
+                                "Put down what you're holding first!"
+                            };
+
+                            MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
                         }
                     }
 
@@ -146,8 +185,26 @@ public class PlayerInventoryManager : MonoBehaviour
                 {
                     // The player is holding some grown plant and is near a dropoff
                     DropoffPlaceScript dropoffScript = dropoff.GetComponent<DropoffPlaceScript>();
-                    dropoffScript.Deposit(holding);
-                    holding = CropType.NoCrop;
+                    try
+                    {
+                        dropoffScript.Deposit(holding);
+                        holding = CropType.NoCrop;
+                    }
+                    catch (System.Exception e)
+                    {
+                        if(e.Message == "You can't deposit that here!")
+                        {
+
+                            string[] listOfResponses =
+                            {
+                                "You can't deposit that!",
+                                "You don't need that!"
+                            };
+
+                            MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+                        }
+                    }
+
                 }
             }
 
@@ -159,12 +216,27 @@ public class PlayerInventoryManager : MonoBehaviour
                 // The player is near a store
                 Store store = nearest.GetComponent<Store>();
 
-                if (store.cropSelling != CropType.NoCrop && holding != CropType.NoCrop) return; // The player is trying to buy something while holding something
+                if (store.cropSelling != CropType.NoCrop && holding != CropType.NoCrop)
+                {
+                    string[] listOfResponses =
+                    {
+                        "You're already holding something!",
+                        "Put down what you're holding first!"
+                    };
+
+                    MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
+                    return; // The player is trying to buy something while holding something
+                }
 
                 if (store.price > money)
                 {
-                    print("Not enough money");
-                    // TODO: not enough money
+                    string[] listOfResponses =
+                    {
+                        "Not enough money!",
+                        "You're short some money"
+                    };
+
+                    MakeTextPopup(listOfResponses[Random.Range(0, listOfResponses.Length)]);
                 }
                 else
                 {
@@ -176,6 +248,7 @@ public class PlayerInventoryManager : MonoBehaviour
                         holdingSeeds = true;
                     }
                     store.buyCrop();
+                    
                 }
 
             }
@@ -251,5 +324,12 @@ public class PlayerInventoryManager : MonoBehaviour
 
         return null;
 
+    }
+
+    public void MakeTextPopup(string text)
+    {
+        Vector3 e = Camera.main.WorldToScreenPoint(transform.position);
+        GameObject go = Instantiate(moneyUIPrefab, e, Quaternion.identity, canvasTransform);
+        go.GetComponent<TextMeshProUGUI>().text = text;
     }
 }

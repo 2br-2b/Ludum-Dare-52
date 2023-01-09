@@ -20,9 +20,10 @@ public class ScoreAnimationStuff : MonoBehaviour
         tsf = GetComponent<RectTransform>();
         rotation = Random.Range(-20f, 20f);
         tsf.rotation = Quaternion.Euler(0, 0, rotation);
-        posx = tsf.anchoredPosition.x + Screen.width / 2;
-        posy = tsf.anchoredPosition.y + Screen.height / 2;
         rot = tsf.rotation;
+
+        posx = tsf.position.x;
+        posy = tsf.position.y;
     }
 
     private void Update()
@@ -36,7 +37,7 @@ public class ScoreAnimationStuff : MonoBehaviour
     private void FixedUpdate()
     {
         cycles += 1;
-        if (cycles > 300)
+        if (cycles > 240) // After 4 seconds
         {
             Destroy(transform.gameObject);
         }

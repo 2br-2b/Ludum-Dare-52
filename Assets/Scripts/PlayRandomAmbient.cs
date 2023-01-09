@@ -24,7 +24,7 @@ public class PlayRandomAmbient : MonoBehaviour
         {
             timeLeftToWait = Random.Range(minWaitTime, maxWaitTime) + soundToPlay.clip.length;
             soundToPlay.Play();
-            print(soundToPlay.clip.name + " played!");
+            //print(soundToPlay.clip.name + " played!");
         }
     }
 }

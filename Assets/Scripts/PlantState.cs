@@ -20,9 +20,12 @@ public class PlantState : MonoBehaviour
 
     public GameObject gameRunningManager;
 
+    GrowSpeedManager gsm;
+
     private void Start()
     {
         GetComponent<SpriteRenderer>().sprite = clear;
+        gsm = transform.parent.GetComponent<GrowSpeedManager>();
     }
 
     // Update is called once per frame
@@ -66,7 +69,7 @@ public class PlantState : MonoBehaviour
 
         print("I now have " + currentCrop.ToString() + " seeds planted!");
 
-        secondsBeforeGrow = Random.Range(10f, 30f);
+        secondsBeforeGrow = gsm.GetGrowthLength();
 
         if (currentCrop == CropType.CandyCane)
         {

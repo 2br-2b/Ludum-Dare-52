@@ -6,20 +6,32 @@ using UnityEngine;
 public class InventoryTextUpdater1 : MonoBehaviour
 {
     [SerializeField] GameObject player;
+    PlayerInventoryManager invMan;
+    CropType holding;
+    string s;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        invMan = player.GetComponent<PlayerInventoryManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        string s = "Holding " + player.GetComponent<PlayerInventoryManager>().holding.ToString();
-        if (player.GetComponent<PlayerInventoryManager>().holdingSeeds)
+        holding = invMan.holding;
+
+        if (holding == CropType.NoCrop)
         {
-            s += " seeds";
+            s = "Holding nothing";
+        }
+        else
+        {
+            s = "Holding " + invMan.holding.ToString();
+            if (invMan.holdingSeeds)
+            {
+                s += " seeds";
+            }
         }
         GetComponent<TextMeshProUGUI>().text = s;
     }

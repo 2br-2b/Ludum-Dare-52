@@ -7,13 +7,10 @@ public class Store : MonoBehaviour
     [SerializeField] public int price = 5;
     [SerializeField] public CropType cropSelling;
     [SerializeField] public GameObject buyable = null;
+    [SerializeField] public string selling;
 
     public virtual void buyCrop()
     {
-        if(buyable != null)
-        {
-            Instantiate(buyable, transform.position, Quaternion.identity);
-        }
     }
 
 }
