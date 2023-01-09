@@ -390,6 +390,7 @@ MonoBehaviour:
   buyHotChocolate: {fileID: 8300000, guid: 188f0fb691d0a1746bc1e71309584e85, type: 3}
   somethingGrows: {fileID: 8300000, guid: 87cf1ef0763c4964096812f5f489cda1, type: 3}
   plantSomething: {fileID: 8300000, guid: d8a240c8e26026c418d1705700b28d71, type: 3}
+  gameRunningHolder: {fileID: 453489791}
 --- !u!95 &40283582
 Animator:
   serializedVersion: 4
