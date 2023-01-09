@@ -169,62 +169,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 60
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":468.999878,"yPos":106.667229},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":-36.0002365,"yPos":123.666985},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-251.3335,"yPos":1386.6665},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"Time
-    attack","parentUIDs":[20],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-353.3335,"yPos":1262.6665},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Unlimited
-    mode","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":350.6667,"yPos":390.666962},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Robot
-    Santa?!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":882.6665,"yPos":994.6668},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
-    on...","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":283,"yPos":770.666748},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-    what happened?","parentUIDs":[35],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":510.999878,"yPos":543.666565},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
-    on","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":552.9999,"yPos":703.6669},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    mean what happened to the drones?","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":527.9999,"yPos":1026.66675},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"What
-    do I do?","parentUIDs":[42],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":1110.99988,"yPos":1619.66675},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"Got
-    it.","parentUIDs":[51],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":577.9999,"yPos":1605.66675},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"Come
-    again?","parentUIDs":[51],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":524.9999,"yPos":895.6668},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"Wow...","parentUIDs":[38,57],"SpeechUID":-1}],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"Money","IntValue":0}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":213.666565,"yPos":-30.9999924},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello
-    There!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":214.999939,"yPos":93.6669846},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
-    not sure, but I think I recognize you. Have you been here before? (Skip tutorial?)","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-83.00025,"yPos":807.6667},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Welcome
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":5}],"EditorInfo":{"isRoot":false,"xPos":368.999939,"yPos":160.667221},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"No","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":-136.000183,"yPos":177.666977},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-351.333435,"yPos":1440.6665},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"Time
+    attack","parentUIDs":[20],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-453.333435,"yPos":1316.6665},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Unlimited
+    mode","parentUIDs":[20],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":250.666748,"yPos":444.666962},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Robot
+    Santa?!","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":782.666565,"yPos":1048.66675},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
+    on...","parentUIDs":[5],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":183.000061,"yPos":824.666748},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    what happened?","parentUIDs":[35],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":410.999939,"yPos":597.666565},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"Go
+    on","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":452.999939,"yPos":757.6669},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    mean what happened to the drones?","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":427.999939,"yPos":1080.66675},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"What
+    do I do?","parentUIDs":[42],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":1010.99994,"yPos":1673.66675},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"Got
+    it.","parentUIDs":[51],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":477.999939,"yPos":1659.66675},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"Come
+    again?","parentUIDs":[51],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":424.999939,"yPos":949.6668},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"Wow...","parentUIDs":[38,57],"SpeechUID":-1}],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"Money","IntValue":0}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":113.666626,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello
+    There!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":115,"yPos":147.666977},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+    not sure, but I think I recognize you. Have you been here before? (Skip tutorial?)","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":-183.000183,"yPos":861.6667},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Welcome
     back. Unfortunately due to inflation your net worth has reduced from last game''s
-    production to $30. Good luck!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":497.999634,"yPos":278.66745},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh!
+    production to $30. Good luck!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":397.9997,"yPos":332.66745},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh!
     I know why I recognize you! Your brother, the current Santa, worked here a long
-    time ago, before the aristocracy... and Robot Santa...","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":26},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":-121.000244,"yPos":1213.6665},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
-    you like to play time attack or unlimited mode?","parentUIDs":[4,54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":270,"yPos":469.666565},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"As
+    time ago, before the aristocracy... and Robot Santa...","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":26},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":-221.000183,"yPos":1267.6665},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
+    you like to play time attack or unlimited mode?","parentUIDs":[4,54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":170.000061,"yPos":523.666565},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"As
     you know, since the original St. Nicholas died a long time ago, we made a Robot
     to replace Santa. It was quite brilliant actually, because none of the elves
     actually knew how to drive the sleigh, and St Nick wrote the code, so they stuck
     the code in a robot and boom, Robot Santa. The Homo Sapiens thought he was immortal,
-    but they''ll never guess the truth...","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":270,"yPos":568.6666},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"So...
+    but they''ll never guess the truth...","parentUIDs":[30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":170.000061,"yPos":622.6666},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"So...
     When St. Nick died, the North Pole was split into factions. One group wanted
     another elf to take the place of Santa, but the other group thought the whole
     Santa idea was ridiculous and that gifts could be dropped off by drones or something
-    like that.","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":278,"yPos":666.666748},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"They
+    like that.","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":178.000061,"yPos":720.666748},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"They
     actually tried to implement the drone idea first, but it turns out that they''re
     too loud and most of them got stuck in chimneys and were discovered by humans.
-    What a mess...","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":276,"yPos":840.6668},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
+    What a mess...","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":176.000061,"yPos":894.6668},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"Well,
     some rich elves came up from the South Pole and formed an aristocracy, and now
-    it''s all a production hierarchy.","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":260,"yPos":959.6669},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    it''s all a production hierarchy.","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":160.000061,"yPos":1013.66687},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"So
     the drone idea didn''t work, but the factions ended up compromising after the
     aristocracy formed, and that''s when they came up with Robot Santa.\r\nSo now
-    all that''s left for us now is production, and that''s where you come in!","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":560.9999,"yPos":1144.66675},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"You''ve
-    been placed in charge of production for the entire country of Elbonia.","parentUIDs":[43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":876.9999,"yPos":1128.6665},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
-    you''ve been placed in charge of production for the entire country of Elbonia.","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":799.9999,"yPos":1276.66675},"ID":46,"ParamActions":[],"TMPFontGUID":null,"Text":"Curiously,
+    all that''s left for us now is production, and that''s where you come in!","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":460.999939,"yPos":1198.66675},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"You''ve
+    been placed in charge of production for the entire country of Elbonia.","parentUIDs":[43],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":776.999939,"yPos":1182.6665},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
+    you''ve been placed in charge of production for the entire country of Elbonia.","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":699.999939,"yPos":1330.66675},"ID":46,"ParamActions":[],"TMPFontGUID":null,"Text":"Curiously,
     instead of putting presents under the tree like normal people, Elbonians set
     up all their presents in a pile and wait for us to deliver their tree to them.
-    Fancy that!","parentUIDs":[44,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":1029.99988,"yPos":1281.66675},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
-    you will be growing and harvesting these trees for the children.","parentUIDs":[46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":1023.99988,"yPos":1383.66675},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
+    Fancy that!","parentUIDs":[44,45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":929.999939,"yPos":1335.66675},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Anyway,
+    you will be growing and harvesting these trees for the children.","parentUIDs":[46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":923.999939,"yPos":1437.66675},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
     more, actually. In Elbonia, good children end up with coal to keep warm through
     the winter, but bad children end up with candy canes to rot their teeth out.
-    Who would have guessed?","parentUIDs":[47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":59}],"EditorInfo":{"isRoot":false,"xPos":790.9999,"yPos":1395.66675},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+    Who would have guessed?","parentUIDs":[47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":59}],"EditorInfo":{"isRoot":false,"xPos":690.999939,"yPos":1449.66675},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"So
     to make money, you will need to buy seeds from the vendors on the left, take
     them over and plant them in the field. When they are ready to harvest, bring
-    them to the workbench and you''ll get paid for each order fulfilled.","parentUIDs":[48,53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":786.9999,"yPos":1511.66675},"ID":50,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
+    them to the workbench and you''ll get paid for each order fulfilled.","parentUIDs":[48,53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":686.999939,"yPos":1565.66675},"ID":50,"ParamActions":[],"TMPFontGUID":null,"Text":"There''s
     a Hot Chocolate vendor if you need a speed boost, and a Magic shop that improves
-    growing rates. Good luck!","parentUIDs":[59],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":52},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":1016.99988,"yPos":1519.66675},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    growing rates. Good luck!","parentUIDs":[59],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":52},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":916.999939,"yPos":1573.66675},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     will be graded on how much money you have in cash at the end, so be careful to
-    balance your expenses. Got It?","parentUIDs":[50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":280,"yPos":1779.66675},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
+    balance your expenses. Got It?","parentUIDs":[50],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":180.000061,"yPos":1833.66675},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
     before I forget, my delinquent older brother in town, and has a habit of making
-    shady business deals. Don''t even talk to him!","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":606.9998,"yPos":777.666748},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh...
+    shady business deals. Don''t even talk to him!","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":506.999878,"yPos":831.666748},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh...
     Well a couple of clever humans stole them, wrote DJI on them or something like
     that, and started to make more. You can still find them on the market today!
-    It''s unbelievable.","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":570.6666,"yPos":1451.6665},"ID":59,"ParamActions":[],"TMPFontGUID":null,"Text":"Each
+    It''s unbelievable.","parentUIDs":[41],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":50}],"EditorInfo":{"isRoot":false,"xPos":470.6667,"yPos":1505.6665},"ID":59,"ParamActions":[],"TMPFontGUID":null,"Text":"Each
     order requires one tree and one decoration.","parentUIDs":[49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Elfred
@@ -427,7 +427,7 @@ MonoBehaviour:
   harvestTree: {fileID: 8300000, guid: 1bbf01f239141884985ad1282977182a, type: 3}
   noMoney: {fileID: 8300000, guid: be2a2d07a2b32164ebeed7457ac1d34f, type: 3}
   genericError: {fileID: 0}
-  sellToElfonzo: {fileID: 0}
+  sellToElfonzo: {fileID: 8300000, guid: 3f799875e64921d4da903dab6ed3c14b, type: 3}
   buyCropMagic: {fileID: 8300000, guid: 2204f2d21f4e40f41b2fdcfeab9d5053, type: 3}
   buyHotChocolate: {fileID: 8300000, guid: 188f0fb691d0a1746bc1e71309584e85, type: 3}
   somethingGrows: {fileID: 8300000, guid: 87cf1ef0763c4964096812f5f489cda1, type: 3}
@@ -2899,35 +2899,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 39
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[],\"EditorInfo\":{\"isRoot\":true,\"xPos\":113.666626,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Lol\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":134.6666,\"yPos\":349.666748},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Yeah
-    so I was texting my pal Elfranklin cause he was supposed to come over and help
-    me count the inventory before it ships out in the evening\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":120.666595,\"yPos\":561.6667},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"but
-    he never came and so I was tryin to get a hold a\u2019 him, see? That\u2019s
-    when the chickens attacked. You never seen so may of them in ya life!! \",\"parentUIDs\":[29],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":79.6665955,\"yPos\":756.6666},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    grabbed my pants and yeeted onto the roof, but see chickens got wings and I didn\u2019t
-    know that so I was in a pickle. They almost got to me but I look to my \",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":95.6665955,\"yPos\":898.6667},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"right
-    and there was Santa Robot with a chainsaw and he meant business. WELL, I barely
-    escaped that with my life cause I don\u2019t think Robot Santa can tell the difference
-    between elfs and chickens but that wasn\u2019t the problem, \",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":64.6665649,\"yPos\":1063.66663},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"the
-    problem was that the chickens were secretly nesting in the Christmas trees and
-    eating the candy canes. Unfortunately we kept the coal under the trees and now
-    they are \",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":29.6665649,\"yPos\":1194.66675},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"covered
-    in this white gross stuff that came outta those creatures someplace...\",\"parentUIDs\":[33],\"AdvanceDialogueAutomatically\":true,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0.1,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":37.6665649,\"yPos\":1357.66663},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\".\",\"parentUIDs\":[35],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":17.6665649,\"yPos\":1476.66663},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"..\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-22.3334351,\"yPos\":1632.66663},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[37],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Elfred\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":113.666626,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Lol","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":0}]}'
   saveVersion: 110
   DefaultName: Elfred
   DefaultSprite: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
   - {fileID: 1977784088}
-  - {fileID: 1977784090}
-  - {fileID: 1977784098}
-  - {fileID: 1977784097}
-  - {fileID: 1977784096}
-  - {fileID: 1977784095}
-  - {fileID: 1977784094}
-  - {fileID: 1977784093}
-  - {fileID: 1977784092}
-  - {fileID: 1977784091}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -3562,7 +3540,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: b214b81b03c48aa419b7905306ef4d6c, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: dec4f5a16078a524f8a3fd5b6d651fea, type: 3}
 --- !u!114 &1099584607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4838,22 +4816,22 @@ MonoBehaviour:
   CurrentIDCounter: 21
   json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-25.000061,"yPos":524.6667},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"Play
     again","parentUIDs":[9],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":262.999939,"yPos":546.6667},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Exit","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"Money","IntValue":0}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"Money","CheckType":0,"RequiredValue":0}],"NodeUID":5},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"Money","CheckType":1,"RequiredValue":120}],"NodeUID":7},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"Money","CheckType":0,"RequiredValue":199}],"NodeUID":8},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[{"__type":"EditableIntCondition:#DialogueEditor","ParameterName":"Money","CheckType":1,"RequiredValue":300}],"NodeUID":10},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14},{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":true,"xPos":113.666626,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Time''s
-    up! It''s Christmas! How did you do?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1717,"yPos":136.666763},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    up! It''s Christmas! How did you do?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1717,"yPos":136.666748},"ID":5,"ParamActions":[],"TMPFontGUID":null,"Text":"You
     realize the true meaning of Christmas. You have a vision, and start spreading
     joy and love to all around you. Your spirit is contagious, affecting even Elfonzo,
     who reconciles with his brother, Elfred, the two become good pals. Your love
     spreads like fire around the world on Christmas day, joining broken families
-    and bringing peace on earth. The End.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1488,"yPos":138.666763},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
-    You are in the top 99.998%.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1272,"yPos":134.666763},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
-    Did you enjoy this game?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":120.000031,"yPos":363.6668},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
-    you like to try again, maybe in a different mode?","parentUIDs":[5,7,8,10,11,12,13,14,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1022.99994,"yPos":127.666763},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
-    You are in the top 0.002%.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-776,"yPos":136.666763},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
-    You are dedicated.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-503,"yPos":147.666763},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
-    leave a comment with the word \"thrilling\" so we know who the MVP is.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-205.999939,"yPos":167.666687},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
+    and bringing peace on earth. The End.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1488,"yPos":138.666748},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
+    You are in the top 99.998%.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1272,"yPos":134.666748},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
+    Did you enjoy this game?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":120,"yPos":363.6668},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Would
+    you like to try again, maybe in a different mode?","parentUIDs":[5,7,8,10,11,12,13,14,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-1023,"yPos":127.666748},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
+    You are in the top 0.002%.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-776,"yPos":136.666748},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Congratulations.
+    You are dedicated.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-503,"yPos":147.666748},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
+    leave a comment with the word \"thrilling\" so we know who the MVP is.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":-205.999954,"yPos":167.666687},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Please
     leave a comment with the word \"Antique\" so we know who the top player is.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":2.000061,"yPos":150.666748},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"Seriously?
-    Go spend some time with your family or something!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":301,"yPos":224.666718},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"We
+    Go spend some time with your family or something!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":301,"yPos":224.666687},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"We
     appreciate your donation! Heh heh heh...","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Elfred","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":260.999939,"yPos":638.6667},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay.
-    Thanks for playing!","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1.5,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":260.999939,"yPos":738.6667},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    Thanks for playing!","parentUIDs":[17],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1.5,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":260.999939,"yPos":738.666748},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"If
     you''re seeing this, you''re playing this in your browser, and we actually can''t
     quit from in here. Could you maybe... umm... pretend this worked and just close
     the window? Thanks!","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -5055,7 +5033,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 0}
   Icon: {fileID: 105290517, guid: c731d1a408222b14c9c3d21b5645eb54, type: 3}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 52ec46537c55002429c064d9fc61cea0, type: 3}
 --- !u!114 &1539718343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8565,15 +8543,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1977784087}
   - component: {fileID: 1977784088}
-  - component: {fileID: 1977784090}
-  - component: {fileID: 1977784098}
-  - component: {fileID: 1977784097}
-  - component: {fileID: 1977784096}
-  - component: {fileID: 1977784095}
-  - component: {fileID: 1977784094}
-  - component: {fileID: 1977784093}
-  - component: {fileID: 1977784092}
-  - component: {fileID: 1977784091}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -8612,177 +8581,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   NodeID: 0
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 29
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 38
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 37
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 36
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 35
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 33
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 32
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 31
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
-  Audio: {fileID: 0}
---- !u!114 &1977784098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977784086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 30
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: abc996954c907ec46a9e84c8309fa43d, type: 3}
   Audio: {fileID: 0}
