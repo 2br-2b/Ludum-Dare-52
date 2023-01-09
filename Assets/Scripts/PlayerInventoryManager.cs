@@ -44,6 +44,10 @@ public class PlayerInventoryManager : MonoBehaviour
         {
             money = 1000;
         }
+        else
+        {
+            money = 30;
+        }
 
         sour = GetComponent<AudioSource>();
         if (genericError == null) genericError = depositBad;
