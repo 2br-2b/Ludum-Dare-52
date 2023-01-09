@@ -29,7 +29,7 @@ public class IncreaseSnowOverTime : MonoBehaviour
         {
             secondsSinceStart += Time.deltaTime;
 
-            if (secondsSinceStart - lastTick > 1)
+            if (secondsSinceStart - lastTick > 60)
             {
                 float q = defaultSnowIntensity + (secondsSinceStart / (60f * minutesToMaxSnow)) * (1 - defaultSnowIntensity);
                 controller.snowIntensity = q > 1 ? 1 : q;

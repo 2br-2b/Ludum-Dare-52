@@ -38,7 +38,14 @@ public class DaysLeftTimerTextUpdate : MonoBehaviour
         }
         else
         {
-            textMesh.text = days_left + " days until Christmas!";
+            if (days_left == 1) {
+                textMesh.text = "1 day until Christmas!";
+            }
+            else
+            {
+                textMesh.text = days_left + " days until Christmas!";
+            }
+
         }
         
 

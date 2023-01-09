@@ -1,8 +1,10 @@
 using DialogueEditor;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
@@ -60,5 +62,15 @@ public class GameOverScript : MonoBehaviour
     public void SetGameLength(int seconds)
     {
         gameLengthInSeconds = seconds;
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    public void KillGame()
+    {
+        Application.Quit();
     }
 }

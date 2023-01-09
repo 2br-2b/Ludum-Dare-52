@@ -16,6 +16,9 @@ public class Move : MonoBehaviour
     Rigidbody2D rbody;
     Animator anim;
 
+    bool soundIsPlaying = false;
+    AudioSource clippy;
+
     void Start(){
 
         rbody = GetComponent<Rigidbody2D>();
@@ -25,7 +28,10 @@ public class Move : MonoBehaviour
         {
             speed = 0.5f;
         }
-            
+
+        clippy = GetComponent<AudioSource>();
+
+
     }
 
     // Update is called once per frame
@@ -53,13 +59,24 @@ public class Move : MonoBehaviour
                 anim.SetBool("IsWalking", true);
                 anim.SetFloat("x", movement_vector.x);
                 anim.SetFloat("y", movement_vector.y);
+                if (!soundIsPlaying)
+                {
+                    clippy.Play();
+                    soundIsPlaying = true;
+                }
             }
             if (movement_vector == Vector2.zero){
                 anim.SetBool("IsWalking", false);
+                if (soundIsPlaying)
+                {
+                    clippy.Stop();
+                    soundIsPlaying = false;
+                }
             }
             
             // The direction the sprite is pointing in degrees, with right being 0
-            float direction = Mathf.Atan2(currentSpeed.y, currentSpeed.x) * Mathf.Rad2Deg;
+            //float direction = Mathf.Atan2(currentSpeed.y, currentSpeed.x) * Mathf.Rad2Deg;
+
 
             // This will be handled by sprites/animations
             /*if(Vector3.Magnitude(currentSpeed) > 0.1)
@@ -73,9 +90,10 @@ public class Move : MonoBehaviour
             {
                 lastSpeed = rbody.velocity;
                 rbody.velocity = Vector2.zero;
+                clippy.Stop();
                 wasRunning = false;
-
             }
+
         }
 
 
