@@ -18,15 +18,26 @@ public class MusicManager : MonoBehaviour
     {
         //audioSource.clip = normalMusicClip;
         audioSource.Play();
-        StartCoroutine(FadeIt2(normalMusicClip, 2));
+        StartCoroutine(FadeIt2(normalMusicClip, 2, 10));
 
     }
 
     public void SetClipFinalMusic()
     {
-        //audioSource.clip = finalMusicClip;
-        audioSource.Play();
-        StartCoroutine(FadeIt2(normalMusicClip, 2));
+        AudioSource[] sources = GetComponents<AudioSource>();
+
+        AudioSource newClip = gameObject.AddComponent<AudioSource>();
+        newClip.clip = finalMusicClip;
+        newClip.volume = audioSource.volume;
+        newClip.loop = true;
+
+        foreach (AudioSource source in sources)
+        {
+            Destroy(source);
+        }
+        //newClip.outputAudioMixerGroup = audioSource.outputAudioMixerGroup;
+        newClip.Play();
+        //StartCoroutine(FadeIt2(finalMusicClip, 2, 2));
     }
 
     public void PauseMusic()
@@ -38,43 +49,10 @@ public class MusicManager : MonoBehaviour
     {
         audioSource.UnPause();
     }
-
-    IEnumerator FadeIt(AudioClip clip, float volume)
+    IEnumerator FadeIt2(AudioClip clip, float volume, float timeToFade)
     {
+        AudioSource[] sources = GetComponents<AudioSource>();
 
-        ///Add new audiosource and set it to all parameters of original audiosource
-        AudioSource fadeOutSource = gameObject.AddComponent<AudioSource>();
-        fadeOutSource.clip = audioSource.clip;
-        fadeOutSource.time = audioSource.time;
-        fadeOutSource.volume = audioSource.volume;
-        fadeOutSource.outputAudioMixerGroup = audioSource.outputAudioMixerGroup;
-        fadeOutSource.time = audioSource.time;
-
-        //make it start playing
-        fadeOutSource.Play();
-
-        //set original audiosource volume and clip
-        audioSource.volume = 0f;
-        audioSource.clip = clip;
-        float t = 0;
-        float v = fadeOutSource.volume;
-        audioSource.Play();
-
-        //begin fading in original audiosource with new clip as we fade out new audiosource with old clip
-        while (t < 0.98f)
-        {
-            t = Mathf.Lerp(t, 1f, Time.deltaTime * 0.2f);
-            fadeOutSource.volume = Mathf.Lerp(v, 0f, t);
-            audioSource.volume = Mathf.Lerp(0f, volume, t);
-            yield return null;
-        }
-        audioSource.volume = volume;
-        //destroy the fading audiosource
-        Destroy(fadeOutSource);
-        yield break;
-    }
-    IEnumerator FadeIt2(AudioClip clip, float volume)
-    {
         float time = audioSource.time;
 
         AudioSource newClip = gameObject.AddComponent<AudioSource>();
@@ -87,8 +65,6 @@ public class MusicManager : MonoBehaviour
         float timePassed = 0;
         float newVolume = audioSource.volume;
 
-        float timeToFade = 10f;
-
         audioSource.time = time;
 
         while (timePassed < timeToFade)
@@ -99,9 +75,18 @@ public class MusicManager : MonoBehaviour
             yield return null;
         }
         newClip.volume = volume;
+        audioSource.volume = 0;
+        audioSource.Stop();
         //destroy the fading audiosource
-        Destroy(audioSource);
+        audioSource.enabled = false;
         audioSource = newClip;
+
+        foreach (AudioSource source in sources)
+        {
+            Destroy(source);
+        }
+
+
         yield break;
     }
 

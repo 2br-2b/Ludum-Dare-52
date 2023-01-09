@@ -350,8 +350,6 @@ public class PlayerInventoryManager : MonoBehaviour
         {
             collectMoney(10);
         }
-
-        print("plants:" + numberOfPlants);
     }
 
     private GameObject GetNearestTileInRange()

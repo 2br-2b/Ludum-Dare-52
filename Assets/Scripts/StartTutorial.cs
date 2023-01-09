@@ -13,6 +13,9 @@ public class StartTutorial : MonoBehaviour
     [SerializeField] GameObject musicManagerGameObject;
     MusicManager musicManager;
 
+    [SerializeField] GameObject elfonzoShop;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +48,5 @@ public class StartTutorial : MonoBehaviour
     {
         //Debug.Log("A conversation has ended.");
         gameRunningManager.GetComponent<GameIsRunning>().StartGame();
-        musicManager.SwitchClipToMain();
     }
 }
