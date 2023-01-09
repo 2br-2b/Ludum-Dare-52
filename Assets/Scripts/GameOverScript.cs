@@ -51,7 +51,7 @@ public class GameOverScript : MonoBehaviour
         ConversationManager.Instance.StartConversation(conversation);
         int moneys = player.GetComponent<PlayerInventoryManager>().money;
         ConversationManager.Instance.SetInt("Money", moneys);
-        finalScore.GetComponent<TextMeshProUGUI>().text = "$" + moneys;
+        finalScore.GetComponentInChildren<TextMeshProUGUI>().text = "$" + moneys;
     }
 
     public float GetTimeLeft()

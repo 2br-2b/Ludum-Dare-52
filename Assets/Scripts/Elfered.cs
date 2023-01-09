@@ -32,6 +32,7 @@ public class Elfered : MonoBehaviour
     {
         yield return null;
         grm.PauseGame(false);
+        GetComponent<SpriteRenderer>().enabled = true;
 
         ConversationManager.Instance.StartConversation(dialogueHolder.GetComponent<NPCConversation>());
     }

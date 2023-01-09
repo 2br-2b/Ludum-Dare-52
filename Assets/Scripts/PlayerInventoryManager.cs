@@ -30,6 +30,11 @@ public class PlayerInventoryManager : MonoBehaviour
 
     AudioSource sour;
 
+    [SerializeField] GameObject gameRunningHolder;
+    GameIsRunning grm;
+
+    GameObject nearest;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +46,10 @@ public class PlayerInventoryManager : MonoBehaviour
         }
 
         sour = GetComponent<AudioSource>();
-        genericError = depositBad;
-        sellToElfonzo = depositGood;
+        if (genericError == null) genericError = depositBad;
+        if (sellToElfonzo == null) sellToElfonzo = depositGood;
+        
+        grm = gameRunningHolder.GetComponent<GameIsRunning>();
     }
 
     public void collectMoney(int amount)
@@ -63,11 +70,7 @@ public class PlayerInventoryManager : MonoBehaviour
     void Update()
     {
 
-        GameObject nearest;
-
-
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && grm.gameIsRunning)
         {
             // Try to interact
 
